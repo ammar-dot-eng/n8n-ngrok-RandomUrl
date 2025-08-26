@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  n8n:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5670:5670"
+    environment:
+      - N8N_LOG_LEVEL=debug
+      - GENERIC_TIMEZONE=Asia/Cairo
+      - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
+      - N8N_RUNNERS_ENABLED=true
+      - N8N_HOST=n8n
+      - N8N_PORT=5670
+      # WEBHOOK_URL will be set by the entrypoint script
+    volumes:
+      - n8n_data:/home/node/.n8n
+    networks:
+      - n8n-network
+    depends_on:
+      - ngrok
+    restart: unless-stopped
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    ports:
+      - "4040:4040"
+    environment:
+      - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
+    command: http n8n:5670
+    networks:
+      - n8n-network
+    restart: unless-stopped
+
+networks:
+  n8n-network:
+    driver: bridge
+
+volumes:
+  n8n_data:
+    driver: local
