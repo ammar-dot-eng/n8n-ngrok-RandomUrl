@@ -35,9 +35,9 @@
 ## ⚡ Quick start
 
 ### 1. Clone the repository
+open your terminal and type :-
 ```bash
-git clone <your-repo-url>
-cd n8n-ngrok-RandomUrl
+git clone https://github.com/ammar-dot-eng/n8n-ngrok-RandomUrl
 ````
 
 ### 2. Create / edit .env in the repository root
