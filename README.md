@@ -40,9 +40,9 @@ open your terminal and type :-
 git clone https://github.com/ammar-dot-eng/n8n-ngrok-RandomUrl
 ````
 
-### 2. Create / edit .env in the repository root
+### 2. edit .env
+Replace the placeholder with your ngrok auth token (no spaces).
 ```env
-# Replace the placeholder with your ngrok auth token (no spaces).
 NGROK_AUTH_TOKEN="your-ngrok-auth-token-here"
 ```
 
