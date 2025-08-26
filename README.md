@@ -82,12 +82,11 @@ If your ngrok free plan runs out of quota:
 1. 🆕 Make another free ngrok account and grab a fresh auth token
 2. ✍️ Replace the token in `.env`
 3. 🔄 Restart the stack:
-
 ```bash
 docker compose down
 docker compose up -d
 ```
-
+note that this doesn't lose you your data, simply updates the instance with the new auth_token
 ---
 
 ## 🔧 Troubleshooting & tips
