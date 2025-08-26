@@ -1,6 +1,3 @@
-Perfect 😎 — here’s the improved README with **badges** added to the top for a polished GitHub look.
-
-````markdown
 # 🚀 n8n-ngrok-RandomUrl
 
 [![Docker](https://img.shields.io/badge/Docker-Desktop-blue?logo=docker)](https://www.docker.com/products/docker-desktop/)
