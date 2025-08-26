@@ -34,23 +34,24 @@
 
 ## ⚡ Quick start
 
-```bash
 # 1. Clone the repository
+```bash
 git clone <your-repo-url>
 cd n8n-ngrok-RandomUrl
 ````
 
-```env
 # 2. Create / edit .env in the repository root
+```env
 # Replace the placeholder with your ngrok auth token (no spaces).
 NGROK_AUTH_TOKEN="your-ngrok-auth-token-here"
 ```
 
-```bash
 # 3. Start the stack (detached)
+```bash
 docker compose up -d
-
+```
 # (optional) watch logs for progress
+```bash
 docker compose logs -f
 ```
 
