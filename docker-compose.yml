@@ -9,7 +9,7 @@ services:
       - "5670:5670"
     environment:
       - N8N_LOG_LEVEL=debug
-      - GENERIC_TIMEZONE=Asia/Cairo
+      - GENERIC_TIMEZONE=Europe/London
       - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
       - N8N_RUNNERS_ENABLED=true
       - N8N_HOST=n8n
@@ -41,3 +41,4 @@ networks:
 volumes:
   n8n_data:
     driver: local
+
