@@ -1,4 +1,12 @@
+Perfect 😎 — here’s the improved README with **badges** added to the top for a polished GitHub look.
+
+````markdown
 # 🚀 n8n-ngrok-RandomUrl
+
+[![Docker](https://img.shields.io/badge/Docker-Desktop-blue?logo=docker)](https://www.docker.com/products/docker-desktop/)
+[![ngrok](https://img.shields.io/badge/ngrok-Random_URLs-orange?logo=ngrok)](https://ngrok.com/)
+[![n8n](https://img.shields.io/badge/n8n-Automation-red?logo=n8n)](https://n8n.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 > Run **n8n** behind **ngrok** with Docker Compose — automatically updates n8n's webhook URL to the randomly-created ngrok URL each time you restart the stack, while keeping your n8n data persistent.
 
