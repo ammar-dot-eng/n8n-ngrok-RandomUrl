@@ -43,7 +43,7 @@ git clone https://github.com/ammar-dot-eng/n8n-ngrok-RandomUrl
 ### 2. edit .env
 Replace the placeholder with your ngrok auth token (no spaces).
 ```env
-NGROK_AUTH_TOKEN="your-ngrok-auth-token-here"
+NGROK_AUTH_TOKEN=your-ngrok-auth-token-here
 ```
 
 ### 3. Start the stack (detached)
