@@ -34,23 +34,23 @@
 
 ## ⚡ Quick start
 
-# 1. Clone the repository
+### 1. Clone the repository
 ```bash
 git clone <your-repo-url>
 cd n8n-ngrok-RandomUrl
 ````
 
-# 2. Create / edit .env in the repository root
+### 2. Create / edit .env in the repository root
 ```env
 # Replace the placeholder with your ngrok auth token (no spaces).
 NGROK_AUTH_TOKEN="your-ngrok-auth-token-here"
 ```
 
-# 3. Start the stack (detached)
+### 3. Start the stack (detached)
 ```bash
 docker compose up -d
 ```
-# (optional) watch logs for progress
+#### (optional) watch logs for progress
 ```bash
 docker compose logs -f
 ```
@@ -73,6 +73,8 @@ To restart (and get a new ngrok URL):
 docker compose up -d
 ```
 
+* you don't need to do that once you run it for the first time, u can start and stop it directly from the docker app from now on.
+
 ---
 
 ## ⚠️ What to do if you hit the ngrok free-tier quota
@@ -86,7 +88,8 @@ If your ngrok free plan runs out of quota:
 docker compose down
 docker compose up -d
 ```
-note that this doesn't lose you your data, simply updates the instance with the new auth_token
+* note that this doesn't lose you your data, simply updates the instance with the new auth_token.
+
 ---
 
 ## 🔧 Troubleshooting & tips
