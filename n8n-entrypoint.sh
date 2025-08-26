@@ -40,7 +40,6 @@ get_ngrok_url() {
 # Get the ngrok URL
 get_ngrok_url
 
-# Export the WEBHOOK_URL environment variable
 export WEBHOOK_URL="$NGROK_URL"
 echo "Set WEBHOOK_URL to: $WEBHOOK_URL"
 
