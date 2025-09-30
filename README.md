@@ -98,3 +98,4 @@ docker compose up -d
 * ❌ Don’t leave spaces when pasting the token in `.env`
 * 🕵️ If auth fails, verify your token on the ngrok dashboard
 * 🔗 If webhooks fail, confirm the ngrok URL and that n8n updated correctly
+* 🕶️ if its updated correctly, and showing an error in fetching the CRL list, use a vpn then restart the stack
